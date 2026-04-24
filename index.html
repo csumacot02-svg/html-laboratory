@@ -1,17 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, nav, section, article, aside, footer {
+            padding: 15px;
+            margin: 10px;
+        }
+
+        #main-header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        #main-footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+ 
+        .nav-links a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            background-color: #555;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+        }
+
+        .article-box {
+            background: white;
+            flex: 2;
+        }
+
+        .aside-box {
+            background: #ddd;
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
 
 
-    <h1>Student Information</h1>
+    <header id="main-header">
+        <h1>My Website</h1>
+        <p>Welcome to my structured webpage</p>
+    </header>
 
-    <p><b>Name:</b> Christian Sumacot</p>
-    <p><b>Course:</b> BS Information Technology</p>
-    <p><b>Section:</b> 3-B</p>
-    <p><b>Date:</b> April 10, 2026</p>
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="content">
+
+        <article class="article-box">
+            <h2>Main Article</h2>
+            <p>This is the main content of the webpage. It contains important information.</p>
+        </article>
+
+
+        <aside class="aside-box">
+            <h3>Sidebar</h3>
+            <p>This is additional information or links.</p>
+        </aside>
+
+    </section>
+
+
+    <footer id="main-footer">
+        <p>&copy; 2026 My Website</p>
+    </footer>
 
 </body>
 </html>
